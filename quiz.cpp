@@ -18,18 +18,18 @@ void pontuacao(){
 		cout<<"Erro ao abrir o arquivo!";
 	}
 }
-void startquiz() //função para iniciar jogo
+void startquiz() //funÃ§Ã£o para iniciar jogo
 {
 	cout<<"###########################################################################################";
 	cout<<"\nPergunta: ";
 }
-void instrucao() //função para dar isntruções de como jogar
+void instrucao() //funÃ§Ã£o para dar isntruÃ§Ãµes de como jogar
 {
 	cout<<"###########################################################################################";
-	cout<<"\nPara jogar basta escolher a resposta certa, caso contrário o jogo volta ao início!";
+	cout<<"\nPara jogar basta escolher a resposta certa, caso contrÃ¡rio o jogo volta ao inÃ­cio!";
 	cout<<"\n###########################################################################################";
 }
-void sobregame() //função para falar sobre os desenvolvedores
+void sobregame() //funÃ§Ã£o para falar sobre os desenvolvedores
 {
 	cout<<"###########################################################################################";
 	cout<<"\nJogo desenvolvido pelo grupo: Alan, Darcy, Vitor.";
@@ -44,7 +44,7 @@ void escolher() //MENU de escolha
 			startquiz();//inicia jogo
 			break;
 		case 2:
-			instrucao();//instruções
+			instrucao();//instruÃ§Ãµes
 			cout<<"\n###########################################################################################";
 			cout<<"\nDigite 1 para jogar ou 5 para sair: ";
 			escolher();
@@ -65,7 +65,7 @@ void escolher() //MENU de escolha
 			cout<<"\nSaindo...";
 			exit(0);
 		default:
-			cout<<"\nVocê escolheu uma opção inválida!";
+			cout<<"\nVocÃª escolheu uma opÃ§Ã£o invÃ¡lida!";
 	        cout<<"\nDigite 1 para jogar ou 5 para sair: ";
 			escolher();
 			cout<<"###########################################################################################";
@@ -73,13 +73,13 @@ void escolher() //MENU de escolha
 	}
 }
 void menu(){
-	cout<<"\nSelecione uma das opções abaixo: \n";
+	cout<<"\nSelecione uma das opÃ§Ãµes abaixo: \n";
 	cout<<"1-INICIAR\n";
-	cout<<"2-INSTRUÇÕES\n";
+	cout<<"2-INSTRUÃ‡Ã•ES\n";
 	cout<<"3-Sobre o jogo\n";
-	cout<<"4-Pontuação global\n";
+	cout<<"4-PontuaÃ§Ã£o global\n";
 	cout<<"5-Sair do jogo\n";
-	cout<<"Digite uma opcão: ";
+	cout<<"Digite uma opcÃ£o: ";
 	escolher();
 }
 void cabecalho(){
@@ -99,7 +99,7 @@ cout<<"                                                        :..8888,. '888888
 cout<<"                                                        .:o888.o8o.  '866o9888o"<<endl;
 cout<<"                                                         :888.o8888.  '88.''89'."<<endl;
 cout<<"                                                        . 89  888888    '88':."<<endl;
-cout<<"                   QUIZ DO MILHÃO                       :.     '8888o"<<endl;
+cout<<"                   QUIZ DO MILHÃƒO                       :.     '8888o"<<endl;
 cout<<"                                                         .       '8888.."<<endl;
 cout<<"                                                                   888888o."<<endl;
 cout<<"                                                                    '888889,"<<endl;
@@ -110,7 +110,7 @@ void se(int certa, int resp, int *passa){
 	if(certa==resp){
 		cout<<"\nCerta resposta!\n";
 		cout<<"###########################################################################################";
-		cout<<"\nPróxima pergunta: ";
+		cout<<"\nPrÃ³xima pergunta: ";
 		*passa=1;
 	}
 	else {
@@ -121,11 +121,11 @@ void se(int certa, int resp, int *passa){
 }
 void perg1(){
 	int certa;
-	cout<<"Qual o país com maior população mundial?\n";
+	cout<<"Qual o paÃ­s com maior populaÃ§Ã£o mundial?\n";
 	cout<<"1 - Brasil\n";
-	cout<<"2 - Índia\n";
+	cout<<"2 - Ãndia\n";
 	cout<<"3 - China\n";
-    cout<<"4 - Rússia\n";
+    cout<<"4 - RÃºssia\n";
     cout<<"Digite sua resposta: ";
     //certa=3;
 }
@@ -134,26 +134,26 @@ void perg2(){
 	cout<<"Qual a capital brasileira mais populosa?\n";
 	cout<<"1 - Belo Horizonte\n";
 	cout<<"2 - Rio de Janeiro\n";
-	cout<<"3 - São Paulo\n";
-    cout<<"4 - Vitória\n";
+	cout<<"3 - SÃ£o Paulo\n";
+    cout<<"4 - VitÃ³ria\n";
     cout<<"Digite sua resposta: ";
 	//certa=3;
 }
 void perg3(){
     int certa;
-    cout<<"Qual o país com maior extensão territorial do mundo?\n";
-    cout<<"1 - Rússia\n";
+    cout<<"Qual o paÃ­s com maior extensÃ£o territorial do mundo?\n";
+    cout<<"1 - RÃºssia\n";
     cout<<"2 - EUA\n";
-    cout<<"3 - Canadá\n";
-    cout<<"4 - Austrália\n";
+    cout<<"3 - CanadÃ¡\n";
+    cout<<"4 - AustrÃ¡lia\n";
     cout<<"Digite sua resposta: ";
     //certa=1;
 }
 void perg4(){
     int certa;
     cout<<"Qual continente mais frio do planeta?\n";
-    cout<<"1 - África\n";
-    cout<<"2 - América\n";
+    cout<<"1 - Ãfrica\n";
+    cout<<"2 - AmÃ©rica\n";
     cout<<"3 - Antartico\n";
     cout<<"4 - Europa\n";
     cout<<"Digite sua resposta: ";
@@ -162,26 +162,26 @@ void perg4(){
 void perg5(){
     int certa;
     cout<<"Qual o maior oceano do mundo?\n";
-    cout<<"1 - Atlântico\n";
-    cout<<"2 - Índico\n";
-    cout<<"3 - Pacífico\n";
+    cout<<"1 - AtlÃ¢ntico\n";
+    cout<<"2 - Ãndico\n";
+    cout<<"3 - PacÃ­fico\n";
     cout<<"4 - Antartico\n";
     cout<<"Digite sua resposta: ";
     //certa=3;
 }
 void perg6(){
     int certa;
-    cout<<"Qual o estado que faz parte da região sul do Brasil?\n";
-    cout<<"1 - Paraná\n";
-    cout<<"2 - Pará\n";
-    cout<<"3 - Rondônia\n";
-    cout<<"4 - Maranhão\n";
+    cout<<"Qual o estado que faz parte da regiÃ£o sul do Brasil?\n";
+    cout<<"1 - ParanÃ¡\n";
+    cout<<"2 - ParÃ¡\n";
+    cout<<"3 - RondÃ´nia\n";
+    cout<<"4 - MaranhÃ£o\n";
     cout<<"Digite sua resposta: ";
     //certa=1;
 }
 void perg7(){
     int certa;
-    cout<<"Qual país faz fronteira com o estado do Rio Grande do Sul?\n";
+    cout<<"Qual paÃ­s faz fronteira com o estado do Rio Grande do Sul?\n";
     cout<<"1 - Argentina\n";
     cout<<"2 - Paraguai\n";
     cout<<"3 - Bolivia\n";
@@ -191,8 +191,8 @@ void perg7(){
 }
 void perg8(){
     int certa;
-    cout<<"Qual país tem a internet mais veloz?\n";
-    cout<<"1 - Coréia do Sul\n";
+    cout<<"Qual paÃ­s tem a internet mais veloz?\n";
+    cout<<"1 - CorÃ©ia do Sul\n";
     cout<<"2 - EUA\n";
     cout<<"3 - Brasil\n";
     cout<<"4 - Chile\n";
@@ -201,7 +201,7 @@ void perg8(){
 }
 void perg9(){
     int certa;
-    cout<<"Quantos partidos políticos existem no Brasil\n";
+    cout<<"Quantos partidos polÃ­ticos existem no Brasil\n";
     cout<<"1 - 50\n";
     cout<<"2 - 24\n";
     cout<<"3 - 14\n";
@@ -233,20 +233,20 @@ int main(){
 	string nome;
 	passa=0;
 	parcial=0;
-	cabecalho(); //chama o cabeçalho
-	cout<<"Digite seu nome para salvar sua pontuação: ";
+	cabecalho(); //chama o cabeÃ§alho
+	cout<<"Digite seu nome para salvar sua pontuaÃ§Ã£o: ";
 	cin>>nome;
 	menu(); //chama o menu
 	perg1(); //chama a primeira pergunta
     certa=3; //resposta da primeira pergunta
     cin>>resp; 
-    se(certa, resp, &passa); //chama função 'se' para conferir resposta, & e * = passagem de parâmetros por referência
+    se(certa, resp, &passa); //chama funÃ§Ã£o 'se' para conferir resposta, & e * = passagem de parÃ¢metros por referÃªncia
 	while(passa==0){
-		cout<<"Pontuação total: ";
+		cout<<"PontuaÃ§Ã£o total: ";
 		cout<<parcial << endl;
 		guarda(&parcial, nome);
 		cout<<"###########################################################################################";
-		cout<<"\nDigite o nome do próximo jogador: ";
+		cout<<"\nDigite o nome do prÃ³ximo jogador: ";
 		cin>>nome;
 		cout<<"###########################################################################################\n";
 		menu();
@@ -260,11 +260,11 @@ int main(){
 	cin>>resp;
     se(certa, resp, &passa);
 	while(passa==0){
-		cout<<"Pontuação total: ";
+		cout<<"PontuaÃ§Ã£o total: ";
 		cout<<parcial << endl;
 		guarda(&parcial, nome);
 		cout<<"###########################################################################################";
-		cout<<"\nDigite o nome do próximo jogador: ";
+		cout<<"\nDigite o nome do prÃ³ximo jogador: ";
 		cin>>nome;
 		cout<<"###########################################################################################";
 		menu();
@@ -278,11 +278,11 @@ int main(){
 	cin>>resp;
     se(certa, resp, &passa);
 	while(passa==0){
-		cout<<"Pontuação total: ";
+		cout<<"PontuaÃ§Ã£o total: ";
 		cout<<parcial << endl;
 		guarda(&parcial, nome);
 		cout<<"###########################################################################################";
-		cout<<"\nDigite o nome do próximo jogador: ";
+		cout<<"\nDigite o nome do prÃ³ximo jogador: ";
 		cin>>nome;
 		cout<<"###########################################################################################";
 		menu();
@@ -296,11 +296,11 @@ int main(){
 	cin>>resp;
     se(certa, resp, &passa);
 	while(passa==0){
-		cout<<"Pontuação total: ";
+		cout<<"PontuaÃ§Ã£o total: ";
 		cout<<parcial << endl;
 		guarda(&parcial, nome);
 		cout<<"###########################################################################################";
-		cout<<"\nDigite o nome do próximo jogador: ";
+		cout<<"\nDigite o nome do prÃ³ximo jogador: ";
 		cin>>nome;
 		cout<<"###########################################################################################";
 		menu();
@@ -314,11 +314,11 @@ int main(){
 	cin>>resp;
     se(certa, resp, &passa);
 	while(passa==0){
-		cout<<"Pontuação total: ";
+		cout<<"PontuaÃ§Ã£o total: ";
 		cout<<parcial << endl;
 		guarda(&parcial, nome);
 		cout<<"###########################################################################################";
-		cout<<"\nDigite o nome do próximo jogador: ";
+		cout<<"\nDigite o nome do prÃ³ximo jogador: ";
 		cin>>nome;
 		cout<<"###########################################################################################";
 		menu();
@@ -332,11 +332,11 @@ int main(){
 	cin>>resp;
     se(certa, resp, &passa);
 	while(passa==0){
-		cout<<"Pontuação total: ";
+		cout<<"PontuaÃ§Ã£o total: ";
 		cout<<parcial << endl;
 		guarda(&parcial, nome);
 		cout<<"###########################################################################################";
-		cout<<"\nDigite o nome do próximo jogador: ";
+		cout<<"\nDigite o nome do prÃ³ximo jogador: ";
 		cin>>nome;
 		cout<<"###########################################################################################";
 		menu();
@@ -350,11 +350,11 @@ int main(){
 	cin>>resp;
     se(certa, resp, &passa);
 	while(passa==0){
-		cout<<"Pontuação total: ";
+		cout<<"PontuaÃ§Ã£o total: ";
 		cout<<parcial << endl;
 		guarda(&parcial, nome);
 		cout<<"###########################################################################################";
-		cout<<"\nDigite o nome do próximo jogador: ";
+		cout<<"\nDigite o nome do prÃ³ximo jogador: ";
 		cin>>nome;
 		cout<<"###########################################################################################";
 		menu();
@@ -368,11 +368,11 @@ int main(){
 	cin>>resp;
     se(certa, resp, &passa);
 	while(passa==0){
-		cout<<"Pontuação total: ";
+		cout<<"PontuaÃ§Ã£o total: ";
 		cout<<parcial << endl;
 		guarda(&parcial, nome);
 		cout<<"###########################################################################################";
-		cout<<"\nDigite o nome do próximo jogador: ";
+		cout<<"\nDigite o nome do prÃ³ximo jogador: ";
 		cin>>nome;
 		cout<<"###########################################################################################";
 		menu();
@@ -386,11 +386,11 @@ int main(){
 	cin>>resp;
     se(certa, resp, &passa);
 	while(passa==0){
-		cout<<"Pontuação total: ";
+		cout<<"PontuaÃ§Ã£o total: ";
 		cout<<parcial << endl;
 		guarda(&parcial, nome);
 		cout<<"###########################################################################################";
-		cout<<"\nDigite o nome do próximo jogador: ";
+		cout<<"\nDigite o nome do prÃ³ximo jogador: ";
 		cin>>nome;
 		cout<<"###########################################################################################";
 		menu();
@@ -404,11 +404,11 @@ int main(){
 	cin>>resp;
     se(certa, resp, &passa);
 	while(passa==0){
-		cout<<"Pontuação total: ";
+		cout<<"PontuaÃ§Ã£o total: ";
 		cout<<parcial << endl;
 		guarda(&parcial, nome);
 		cout<<"###########################################################################################";
-		cout<<"\nDigite o nome do próximo jogador: ";
+		cout<<"\nDigite o nome do prÃ³ximo jogador: ";
 		cin>>nome;
 		cout<<"###########################################################################################";
 		menu();
@@ -524,11 +524,11 @@ cout<<"                                                ####++''';:,  "<<endl;
 cout<<"                                                +####++'';:;  "<<endl;                                             
 cout<<"                                                #####+'';;;'  "<<endl;                                             
 cout<<"                                                ##++++++;    "<<endl;                                              
-	cout<<"Pontuação total: ";
+	cout<<"PontuaÃ§Ã£o total: ";
 	cout<<parcial << endl;
 	cout<<"\n";
-	cout<<"Parabéns ganhou 1 milhão! - Confira acima!\n";
+	cout<<"ParabÃ©ns ganhou 1 milhÃ£o! - Confira acima!\n";
 	guarda(&parcial, nome);
-	cout<<"Para jogar abra novamente o programa... até mais!";
+	cout<<"Para jogar abra novamente o programa... atÃ© mais!";
 	return 0;
 }
